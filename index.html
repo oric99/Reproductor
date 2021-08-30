@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div id="content">
+        <div id="background_image">
+        </div>
+        <div id="repro">
+            <div id="album">
+                <div id="header1">
+                    <div class="btn">
+                        <img src="./assets/menu icon.png" height="16" width="16" alt="">
+                    </div>
+                    <div class="btn">
+                        <img src="./assets/search icon.png" height="16" width="16" alt="">
+                    </div>
+                </div>
+                <div id="footer1">
+                    <img src="./assets/fakeprogress_bar.png" height="100%" width="100%" alt="">
+                </div>
+            </div>
+            <div id="panel">
+                <div id="song_info">
+                    <div class="subtext">
+                        The Subliminal Verses
+                    </div>
+                    <div id="textsong">
+                        Before I Forget
+                    </div>
+                    <div class="subtext">
+                        Slipknot
+                    </div>
+                </div>
+                <div id="control">
+                    <div class="btn">
+                        <img src="./assets/back.png" height="16" width="16" alt="">
+                    </div>
+                    <div id="play" onclick="playpause()">
+                        <img src="./assets/play2 icon.png" height="20" width="20" alt="el play pero no funca">
+                    </div>
+                    <audio id="audio">
+                        <source src="./assets/slipknot_before_I_forget.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="btn">
+                        <img src="./assets/next.png" height="16" width="16" alt="">
+                    </div>
+                </div>
+                <div id="footer2">
+                    <div class="btn">
+                        <img src="./assets/heart icono.png" height="16" width="16" alt="">
+                    </div>
+                    <div class="btn">
+                        <img src="./assets/aleatory icono.png" height="16" width="16" alt="">
+                    </div>
+                    <div class="btn">
+                        <img src="./assets/repeat icon.png" height="16" width="16" alt="">
+                    </div>
+                    <div class="btn">
+                        <img src="./assets/option icon.png" height="16" width="16" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./src/app.js"></script>
+</body>
+
+</html>

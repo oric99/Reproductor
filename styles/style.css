@@ -1,0 +1,230 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#content {
+  position: absolute;
+  display: flex;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+}
+#content #background_image {
+  background-size: cover;
+  background-image: url(../assets/fondo_desktop.jpg);
+  display: flex;
+  position: fixed;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  z-index: -100;
+}
+#content #repro {
+  height: 580px;
+  width: 320px;
+  top: 20px;
+  display: flex;
+  border-radius: 6px;
+  position: fixed;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 30px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column;
+  background-color: white;
+}
+#content #repro #album {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  background-image: url(../assets/fondoAlbum.jpg);
+  background-position: center;
+  background-size: cover;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  position: relative;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#content #repro #album #header1 {
+  width: 92%;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+}
+#content #repro #album #header1 .btn {
+  transition: all 0.5s ease;
+  margin-top: 10px;
+  display: flex;
+  height: 24px;
+  width: 24px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#content #repro #album #header1 .btn:hover {
+  border-radius: 30px;
+  background-color: rgba(214, 214, 214, 0.555);
+  box-shadow: 0px 0px 50px;
+}
+#content #repro #album #footer1 {
+  width: 80%;
+  height: 4%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content #repro #panel {
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  width: 100%;
+  height: 40%;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#content #repro #panel #song_info {
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 30%;
+  flex-flow: column;
+  display: flex;
+}
+#content #repro #panel #song_info .subtext {
+  margin: 2px;
+  font-size: 13px;
+  font-family: "Calibri";
+  color: #5a5757;
+}
+#content #repro #panel #song_info #textsong {
+  margin: 2px;
+  font-size: 20px;
+  font-family: "Calibri";
+  color: #ad0505;
+}
+#content #repro #panel #control {
+  width: 55%;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#content #repro #panel #control .btn {
+  transition: all 0.5s ease;
+  display: flex;
+  height: 36px;
+  width: 36px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0px 1px 8px rgba(77, 77, 77, 0.774);
+  opacity: 100%;
+  cursor: pointer;
+}
+#content #repro #panel #control .btn:hover {
+  opacity: 80%;
+  background-color: rgba(214, 214, 214, 0.555);
+  box-shadow: 0px 1px 5px rgba(37, 37, 37, 0.596);
+}
+#content #repro #panel #control #audio {
+  visibility: hidden;
+  position: fixed;
+}
+#content #repro #panel #control #play {
+  transition: all 0.5s ease;
+  display: flex;
+  height: 54px;
+  width: 54px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0px 1px 8px rgba(78, 78, 78, 0.596);
+  opacity: 100%;
+  cursor: pointer;
+}
+#content #repro #panel #control #play:hover {
+  box-shadow: 1px 1px 6px rgba(37, 37, 37, 0.596);
+  opacity: 80%;
+  background-color: rgba(214, 214, 214, 0.555);
+}
+#content #repro #panel #footer2 {
+  bottom: 0px;
+  width: 84%;
+  height: max-content;
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#content #repro #panel #footer2 .btn {
+  transition: all 0.5s ease;
+  display: flex;
+  height: 24px;
+  width: 24px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+#content #repro #panel #footer2 .btn:hover {
+  border-radius: 30px;
+  background-color: rgba(214, 214, 214, 0.555);
+  box-shadow: 0px 0px 50px;
+}
+
+@media (max-width: 375px) {
+  #content #background_image {
+    transition: all 0.5s ease;
+    display: none;
+  }
+  #content #repro {
+    transition: all 0.5s ease;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+  }
+  #content #repro #album {
+    transition: all 0.5s ease;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  #content #repro #panel {
+    transition: all 0.5s ease;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  #content #repro #panel #song_info {
+    width: 60%;
+    height: 35%;
+    justify-content: flex-end;
+  }
+  #content #repro #panel #song_info .subtext {
+    font-size: 17px;
+  }
+  #content #repro #panel #song_info #textsong {
+    font-size: 26px;
+  }
+  #content #repro #panel #control .btn {
+    height: 45px;
+    width: 45px;
+  }
+  #content #repro #panel #control #play {
+    height: 60px;
+    width: 60px;
+    box-shadow: 1px 1px 8px rgba(78, 78, 78, 0.596);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
