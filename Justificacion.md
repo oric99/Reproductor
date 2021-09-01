@@ -22,3 +22,6 @@ Este lo descarté ya que en la distribución el "background_image" ,que es mi ca
 sketch 3:
 ![sketch3 (Final)](https://user-images.githubusercontent.com/70826513/131754900-9a0e0459-e2e8-4a9a-8e8e-3a9cc6bb3437.jpg)
 Finalmente usé este sketch para el diseño del reproductor, un contenedor global, un fondo independiente del reproductor para facilitar el responsive movil e imagenes png para loss botónes que permiten modificar la forma y color del botón desde los estilos.
+
+resultado final:
+![image](https://user-images.githubusercontent.com/70826513/131755327-7b59161a-856b-4024-9730-cf62327e1a78.png)
